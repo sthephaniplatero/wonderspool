@@ -1,0 +1,133 @@
+export interface MenuItem {
+  name: string;
+  price: number;
+  note?: string;
+}
+export interface MenuGroup {
+  title?: string;
+  items: MenuItem[];
+}
+export interface MenuSection {
+  id: string;
+  title: string;
+  subtitle?: string;
+  groups: MenuGroup[];
+  featured?: MenuItem[];
+}
+
+// Edita aquí los platos y precios.
+export const MENU = {
+  restaurant: "Wonder's Pool",
+  since: 1997,
+  location: 'La Estanzia',
+  sections: [
+    {
+      id: 'boquitas',
+      title: 'Boquitas',
+      groups: [
+        {
+          items: [
+            { name: 'Churros preparados', price: 1.0 },
+            { name: 'Queso frito', price: 1.25 },
+            { name: 'Deditos de queso', price: 1.25 },
+            { name: 'Medallones', price: 1.25 },
+            { name: 'Chorizo', price: 1.25 },
+            { name: 'Chicharrón', price: 1.25 },
+            { name: 'Carne oreada', price: 1.25 },
+            { name: 'Costilla de cerdo', price: 1.25 },
+            { name: 'Costilla ahumada', price: 1.5 },
+            { name: 'Camarones al ajillo', price: 1.5 },
+            { name: 'Papas fritas', price: 1.5 },
+            { name: 'Papas gajo', price: 2.5 },
+          ],
+        },
+      ],
+      featured: [{ name: 'Nachos con chili', price: 2.0 }],
+    },
+    {
+      id: 'plato-fuerte',
+      title: 'Plato fuerte',
+      groups: [
+        {
+          items: [
+            { name: 'Hamburguesa con papas', price: 4.0 },
+            { name: 'Hamburguesa sin papas', price: 3.0 },
+            { name: 'Churrasco', price: 4.0 },
+            { name: 'Boquitas', price: 5.0 },
+            { name: 'Tacos', price: 3.5 },
+            { name: 'Ceviche', price: 4.0 },
+          ],
+        },
+      ],
+      featured: [
+        { name: 'Pizza personal', price: 3.0 },
+        { name: 'Sopa de tortilla', price: 1.75 },
+      ],
+    },
+    {
+      id: 'cervezas',
+      title: 'Bebidas',
+      subtitle: 'Cervezas',
+      groups: [
+        {
+          title: 'Internacionales',
+          items: [
+            { name: 'Heineken', price: 2.5 },
+            { name: 'Corona', price: 2.5 },
+            { name: 'Michelob Ultra', price: 2.5 },
+            { name: 'Modelo', price: 2.5 },
+            { name: 'Tecate', price: 2.5 },
+            { name: 'Smirnoff', price: 2.5 },
+            { name: 'Blue Moon', price: 2.5 },
+            { name: 'Miller', price: 2.5 },
+          ],
+        },
+        {
+          title: 'Nacionales',
+          items: [
+            { name: 'Pilsener', price: 1.5 },
+            { name: 'Pilsener grande', price: 3.0 },
+            { name: 'Golden', price: 1.5 },
+            { name: 'Golden grande', price: 3.0 },
+            { name: 'Golden Xtra', price: 1.5 },
+            { name: 'Golden Xtra grande', price: 3.0 },
+            { name: 'Suprema', price: 1.65 },
+            { name: 'Regia', price: 3.0 },
+            { name: 'Cabro', price: 1.6 },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'sin-alcohol',
+      title: 'Bebidas',
+      subtitle: 'Sin alcohol, latas y especiales',
+      groups: [
+        {
+          title: 'Sin alcohol',
+          items: [
+            { name: 'Agua', price: 1.0 },
+            { name: 'Gaseosas', price: 1.0 },
+            { name: 'Frescos naturales', price: 1.5 },
+            { name: 'Power', price: 1.5 },
+            { name: 'Jugos del Valle', price: 1.0 },
+            { name: 'Corona cero alcohol', price: 2.0 },
+          ],
+        },
+        {
+          title: 'Latas',
+          items: [
+            { name: 'Gallo', price: 1.25 },
+            { name: 'Gallo Light', price: 1.6 },
+            { name: 'Pilsener', price: 1.85 },
+            { name: 'Regia', price: 1.85 },
+          ],
+        },
+        {
+          title: 'Especiales',
+          items: [{ name: 'Mix de michelada', price: 1.75 }],
+        },
+      ],
+    },
+  ] as MenuSection[],
+};

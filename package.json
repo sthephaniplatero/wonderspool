@@ -1,0 +1,12 @@
+{
+  "name": "wonders-pool-menu",
+  "private": true,
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "dev:api": "npm run start:dev -w backend",
+    "dev:web": "npm run dev -w frontend",
+    "build": "npm run build -w frontend && npm run build -w backend",
+    "start": "npm run start:prod -w backend",
+    "build:pages": "node scripts/generate-static.cjs && npm run build -w frontend"
+  }
+}

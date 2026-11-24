@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Cartel QR | Wonder's Pool</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { background: #444; }
+  body { font-family: 'Oswald','Arial Narrow',Impact,sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sheet {
+    position: relative; overflow: hidden; width: 210mm; height: 297mm; margin: 0 auto;
+    background: #000; color: #fff; text-align: center;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9mm;
+  }
+  .wave { position: absolute; width: 100%; height: 100%; inset: 0; z-index: 0; }
+  .sheet > :not(.wave) { position: relative; z-index: 1; }
+  .logo { font-size: 17mm; font-weight: 700; letter-spacing: .03em; line-height: 1; border-bottom: .9mm solid #fff; padding-bottom: 2mm; }
+  .logo small { display: block; font-size: 5mm; font-weight: 300; letter-spacing: .25em; margin-top: 2mm; border: 0; }
+  h1 { font-size: 22mm; font-weight: 300; line-height: .95; text-transform: uppercase; letter-spacing: .04em; }
+  h1 b { color: #76d739; font-weight: 700; }
+  .card {
+    background: #fff; padding: 9mm; border-radius: 10mm; width: 100mm; height: 100mm;
+    border: 2.5mm solid #76d739; box-shadow: 0 0 0 2mm #000, 0 0 0 3mm #76d739;
+  }
+  .card svg { width: 100%; height: 100%; display: block; }
+  .pill { background: #76d739; color: #000; font-size: 9mm; padding: 2mm 14mm; border-radius: 99mm; text-transform: uppercase; letter-spacing: .05em; }
+  .cta { font-size: 6.5mm; font-weight: 300; letter-spacing: .12em; text-transform: uppercase; }
+  .cta b { color: #76d739; font-weight: 400; }
+  .url { font-size: 4mm; color: #aaa; letter-spacing: .05em; word-break: break-all; max-width: 150mm; }
+  .hint { text-align: center; color: #fff; font: 14px system-ui; padding: 10px; }
+  @media print { html, body { background: none; } .hint { display: none; } }
+</style>
+</head>
+<body>
+<p class="hint">Imprime con Ctrl+P → tamaño A4, sin márgenes, activar “Gráficos de fondo”.</p>
+<div class="sheet">
+  <svg class="wave" viewBox="0 0 210 297" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 0 H52 C44 14 40 24 28 24 C14 24 8 36 0 50 Z" fill="#76d739"/>
+    <path d="M210 297 H160 C168 284 172 276 184 276 C198 276 204 264 210 252 Z" fill="#76d739"/>
+    <path d="M190 -5 C198 14 186 24 196 36 C202 44 214 44 214 44" fill="none" stroke="#76d739" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-4 268 C10 262 18 276 30 274 C40 272 44 262 54 270" fill="none" stroke="#76d739" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <div class="logo">WONDER'S POOL<small>SINCE 1997</small></div>
+  <h1>Escanea<br>y mira nuestro <b>menú</b></h1>
+  <div class="card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" shape-rendering="crispEdges"><path fill="#ffffff" d="M0 0h33v33H0z"/><path stroke="#000000" d="M0 0.5h7m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m1 0h1m2 0h2m1 0h7M0 1.5h1m5 0h1m1 0h2m1 0h4m3 0h1m3 0h1m1 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h6m2 0h4m1 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m3 0h1m1 0h2m2 0h1m1 0h1m4 0h2m1 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h4m9 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m1 0h1m3 0h3m2 0h1m1 0h3m1 0h2m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M8 7.5h1m2 0h1m1 0h1m1 0h3m3 0h3M2 8.5h3m1 0h1m1 0h2m1 0h2m1 0h1m1 0h2m1 0h2m1 0h6m2 0h3M5 9.5h1m6 0h1m1 0h2m1 0h5m1 0h1m1 0h2m4 0h2M0 10.5h1m1 0h1m1 0h3m2 0h1m4 0h3m3 0h2m2 0h1m2 0h1m1 0h3M2 11.5h1m2 0h1m1 0h2m3 0h1m1 0h2m1 0h7m1 0h1m3 0h3M0 12.5h2m2 0h3m2 0h5m1 0h4m2 0h1m1 0h3m2 0h2m1 0h1M0 13.5h5m3 0h3m2 0h2m1 0h1m3 0h1m1 0h2m1 0h2m2 0h1m2 0h1M1 14.5h2m1 0h1m1 0h1m4 0h5m2 0h3m1 0h1m2 0h1m1 0h5M0 15.5h3m1 0h1m2 0h1m1 0h3m1 0h3m1 0h1m1 0h4m1 0h2m2 0h5M1 16.5h2m3 0h2m3 0h2m2 0h1m7 0h1m1 0h1m2 0h1m2 0h2M0 17.5h2m2 0h2m1 0h3m2 0h1m1 0h1m1 0h1m2 0h2m2 0h2m1 0h1m5 0h1M5 18.5h4m1 0h3m1 0h5m1 0h1m1 0h1m2 0h1m1 0h1m2 0h2M0 19.5h2m3 0h1m1 0h3m1 0h5m1 0h1m1 0h3m1 0h3m1 0h6M0 20.5h1m2 0h5m1 0h2m1 0h1m2 0h2m2 0h1m2 0h1m1 0h1m2 0h3m1 0h2M0 21.5h2m1 0h1m4 0h1m1 0h2m2 0h5m5 0h1m1 0h1m3 0h1m1 0h1M0 22.5h1m2 0h1m1 0h3m1 0h1m5 0h1m2 0h1m3 0h1m6 0h1m1 0h1M0 23.5h1m2 0h3m7 0h1m1 0h1m1 0h7m5 0h4M0 24.5h1m5 0h2m1 0h1m2 0h2m1 0h2m1 0h1m1 0h1m2 0h7m1 0h1M8 25.5h1m1 0h2m2 0h1m1 0h3m1 0h1m3 0h1m3 0h5M0 26.5h7m4 0h1m2 0h4m1 0h1m2 0h3m1 0h1m1 0h1m1 0h2M0 27.5h1m5 0h1m2 0h2m5 0h2m2 0h1m3 0h1m3 0h5M0 28.5h1m1 0h3m1 0h1m1 0h2m1 0h2m2 0h1m1 0h1m3 0h2m1 0h5m2 0h2M0 29.5h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m2 0h2m4 0h1m2 0h4M0 30.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h5m2 0h3m2 0h2M0 31.5h1m5 0h1m2 0h1m1 0h1m1 0h2m1 0h5m1 0h1m4 0h1m1 0h2M0 32.5h7m3 0h3m1 0h2m1 0h1m1 0h2m2 0h2m1 0h1m4 0h1"/></svg>
+</div>
+  <div class="pill">La Estanzia</div>
+  <div class="cta">Abre la cámara de tu <b>celular</b></div>
+  <div class="url">https://usuario.github.io/menu/</div>
+</div>
+</body>
+</html>
